@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<script>
+    $(function(){
+        $(".white").click(function(){
+            $(this).parent().find(".transparency").css({"display":"block"});
+        });
+        $(".transparency").bind("click",function(e){
+            var target = $(e.target);
+            if(target.closest(".div1").length == 0){
+                $(".transparency").hide();
+            }
+        });
+    })
+</script>
+<body>
+    <div class="content">
+        <img src="images/bj2.jpg">
+        <h2>【分享赚佣金】</h2>
+        <ul>
+            <li>
+                <div class="white white1">
+                    <img class="white_img1" src="images/iconc_03.png">
+                    <img class="white_img1_1"  src="images/iconc_13.png">
+                </div>
+                <div class="transparency" style="display: none">
+                    <div class="div1">
+                        <img class="div_img1" src="images/icons.jpg">
+                        <img class="div_img2" src="images/icons1.jpg">
+                        <img class="div_img3" src="images/icons2.jpg">
+                        <img class="div_img4" src="images/icons3.jpg">
+                        <img class="div_img5" src="images/icons4.jpg">
+                        <img class="div_img6" src="images/icons5.jpg">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="white white2">
+                    <img class="white_img2" src="images/iconc_03.png">
+                    <img class="white_img1_2"  src="images/iconc_13.png">
+                </div>
+                <div class="transparency" style="display: none">
+                    <div class="div1">
+                        <img class="div-img" src="images/cy2_03.jpg">
+                        <div class="left">
+                            <img class="left_img1" src="images/cy2_07.jpg">
+                            <img class="left_img2" src="images/cy2_13.jpg">
+                            <img class="left_img3" src="images/cy2_18.jpg">
+                        </div>
+                        <div class="right">
+                            <img class="right_img1" src="images/cy2_09.jpg">
+                            <img class="right_img2" src="images/cy2_21.jpg">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="white white3">
+                    <img class="white_img3" src="images/iconc_03.png">
+                    <img class="white_img1_3"  src="images/iconc_13.png">
+                </div>
+                <div class="transparency" style="display: none">
+                    <div class="div1">
+                        <img class="div-img1" src="images/tx2_03.jpg"><br>
+                        <img class="div-img2" src="images/tx2_07.jpg"><br>
+                        <img class="div-img3" src="images/tx2_11.jpg">
+                        <img class="div-img4" src="images/tx2_15.jpg">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <img class="content-img" src="images/bz_03.png">
+        <div class="icon">
+            <img class="icon-img1" src="images/gh2_03.png"><br>
+            <img class="icon-img2" src="images/icon2_03.png"><br>
+            <a class="a7"  href="tel:023-62532536"><img src="images/icon3_06.png"></a><br>
+            <a class="a8"  href="http://dwz.cn/48rAMI"><img src="images/icon4_09.png"></a><br>
+        </div>
+    </div>
+</body>
+</html>
